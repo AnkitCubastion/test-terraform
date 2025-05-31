@@ -48,7 +48,7 @@ resource "azurerm_subnet" "as-avm" {
   address_prefixes     = ["10.226.0.0/16"]
 }
 
-resource "azurerm_public_ip" "api" {
+resource "azurerm_public_ip" "api-vm" {
   name                = "avm-pi"
   resource_group_name = azurerm_resource_group.arg.name
   location            = azurerm_resource_group.arg.location
